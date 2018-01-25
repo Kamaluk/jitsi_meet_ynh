@@ -1,0 +1,55 @@
+{
+    "name": "Jitsi Meet",
+    "id": "jitsimeet",
+    "packaging_format": 1,
+    "description": {
+        "en": "secure communication in the web",
+        "fr": "Communication secure sur le web"
+    },
+    "version": "0",
+    "url": "http://jitsimeetynh.github.io/",
+    "license": "Apache-2.0",
+    "maintainer": {
+        "name": "kamaluk",
+        "email": "kamaluk@evrybody.net"
+    },
+    "requirements": {
+        "yunohost": ">= 2.7.2"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for Jitsi Meet",
+                    "fr": "Choisissez un domaine pour Jitsi Meet"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for Jitsi Meet",
+                    "fr": "Choisissez un chemin pour Jitsi Meet"
+                },
+                "example": "/meet",
+                "default": "/meet"
+            },-
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "ask": {
+                    "en": "Is it a public application?",
+                    "fr": "Est-ce une application publique ?"
+                },
+                "default": true
+            }
+        ]
+    }
+}
