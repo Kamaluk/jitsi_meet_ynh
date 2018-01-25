@@ -1,2 +1,5 @@
-# jitsi_meet_ynh
-Jitsi Meet for Yunohost
+# Jitsi Meet for Yunohost
+
+Not working
+
+https://jitsi.org/
